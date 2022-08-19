@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main (){
+  float p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19;
+  float l,a,c,p;
+  int x=1;
+  do{
+	setlocale(LC_NUMERIC, "pt_BR");
+  printf("Insira o valor da largura:");
+  scanf("%f",&l);
+  printf("Insira o valor da altura:");
+  scanf("%f",&a);
+  printf("Insira o valor do comprimento:");
+  scanf("%f",&c);
+  printf("Informe o peso do produto:");
+  scanf("%f",&p);
+  p1=17.45;
+  p2=18.95;
+  p3=19.45;
+  p4=23.95;
+  p5=35.95;
+  p6=56.45;
+  p7=62.95;
+  p8=73.45;
+  p9=84.95;
+  p10=96.45;
+  p11=102.95;
+  p12=110.45;
+  p13=118.95;
+  p14=126.45;
+  p15=134.95;
+  p16=142.45;
+  p17=152.95;
+  p18=162.45;
+  p19=170.95;
+  if ((float)(l*a*c)/6000>5){
+    p=(float)(l*a*c)/6000;
+    if (p<=0.5)
+      printf("Valor do frete: %.2f",p1);
+    else if (p>0.5 && p<=1.0)
+      printf("Valor do frete: %.2f",p2);
+    else if (p>1.0 && p<=2.0)
+      printf("Valor do frete: %.2f",p3);
+    else if (p>2.0 && p<=5.0)
+      printf("Valor do frete: %.2f",p4);
+    else if (p>5.0 && p<=9.0)
+      printf("Valor do frete: %.2f",p5);
+    else if (p>9.0 && p<=13.0)
+      printf("Valor do frete: %.2f",p6);
+    else if (p>13.0 && p<=17.0)
+      printf("Valor do frete: %.2f",p7);
+    else if (p>17.0 && p<=23.0)
+      printf("Valor do frete: %.2f",p8);
+    else if (p>23.0 && p<=30.0)
+      printf("Valor do frete: %.2f",p9);
+    else if (p>30.0 && p<=40.0)
+      printf("Valor do frete: %.2f",p10);
+    else if (p>40.0 && p<=50.0)
+      printf("Valor do frete: %.2f",p11);
+    else if (p>50.0 && p<=60.0)
+      printf("Valor do frete: %.2f",p12);
+    else if (p>60.0 && p<=70.0)
+      printf("Valor do frete: %.2f",p13);
+    else if (p>70.0 && p<=80.0)
+      printf("Valor do frete: %.2f",p14);
+    else if (p>80.0 && p<=90.0)
+      printf("Valor do frete: %.2f",p15);
+    else if (p>90.0 && p<=100.0)
+      printf("Valor do frete: %.2f",p16);
+    else if (p>100.0 && p<=125.0)
+      printf("Valor do frete: %.2f",p17);
+    else if (p>125.0 && p<=150.0)
+      printf("Valor do frete: %.2f",p18);
+    else if (p>150.0)
+      printf("Valor do frete: %.2f",p19);
+    getch();
+    system("cls");
+    }
+  else if ((float)(l*a*c)/6000<5){
+    if (p<=0.5)
+      printf("Valor do frete: %.2f",p1);
+    else if (p>0.5 && p<=1.0)
+      printf("Valor do frete: %.2f",p2);
+    else if (p>1.0 && p<=2.0)
+      printf("Valor do frete: %.2f",p3);
+    else if (p>2.0 && p<=5.0)
+      printf("Valor do frete: %.2f",p4);
+    else if (p>5.0 && p<=9.0)
+      printf("Valor do frete: %.2f",p5);
+    else if (p>9.0 && p<=13.0)
+      printf("Valor do frete: %.2f",p6);
+    else if (p>13.0 && p<=17.0)
+      printf("Valor do frete: %.2f",p7);
+    else if (p>17.0 && p<=23.0)
+      printf("Valor do frete: %.2f",p8);
+    else if (p>23.0 && p<=30.0)
+      printf("Valor do frete: %.2f",p9);
+    else if (p>30.0 && p<=40.0)
+      printf("Valor do frete: %.2f",p10);
+    else if (p>40.0 && p<=50.0)
+      printf("Valor do frete: %.2f",p11);
+    else if (p>50.0 && p<=60.0)
+      printf("Valor do frete: %.2f",p12);
+    else if (p>60.0 && p<=70.0)
+      printf("Valor do frete: %.2f",p13);
+    else if (p>70.0 && p<=80.0)
+      printf("Valor do frete: %.2f",p14);
+    else if (p>80.0 && p<=90.0)
+      printf("Valor do frete: %.2f",p15);
+    else if (p>90.0 && p<=100.0)
+      printf("Valor do frete: %.2f",p16);
+    else if (p>100.0 && p<=125.0)
+      printf("Valor do frete: %.2f",p17);
+    else if (p>125.0 && p<=150.0)
+      printf("Valor do frete: %.2f",p18);
+    else if (p>150.0)
+      printf("Valor do frete: %.2f",p19);
+    getch();
+    system("cls");
+	}}while(x<=1);	
+	return 0;
+}
